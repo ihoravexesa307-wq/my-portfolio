@@ -1,0 +1,237 @@
+/* 全局 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  background-color: #ffffff;
+  color: #2b2f36;
+  line-height: 1.6;
+}
+
+/* 顶部自我介绍 */
+.hero {
+  text-align: center;
+  padding: 72px 16px 48px;
+  border-bottom: 3px solid #d1fae5;
+}
+
+.hero h1 {
+  font-size: 32px;
+  color: #1a1f27;
+  margin-bottom: 12px;
+}
+
+.hero .intro {
+  font-size: 17px;
+  color: #5a6270;
+}
+
+.hero .intro::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  background-color: #10b981;
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+/* 三个板块 */
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background-color: #fafbfc;
+  border: 1px solid #e5e8ec;
+  border-left: 4px solid #10b981;
+  border-radius: 8px;
+  padding: 24px 28px;
+}
+
+.card h2 {
+  font-size: 20px;
+  color: #1a1f27;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #5a6270;
+  font-size: 15px;
+}
+
+/* 关于我卡片 */
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 32px;
+  background-color: #ffffff;
+  border-left: 4px solid #10b981;
+}
+
+.about-card .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid #d1fae5;
+}
+
+.about-card .about-info {
+  text-align: left;
+}
+
+.about-card .about-info h2 {
+  font-size: 14px;
+  color: #a0522d;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  border-bottom: none;
+}
+
+.about-card .about-name {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1f27;
+  margin-bottom: 4px;
+}
+
+.about-card .about-school {
+  font-size: 15px;
+  color: #5a6270;
+  margin-bottom: 10px;
+}
+
+.about-card .about-desc {
+  font-size: 15px;
+  color: #a0522d;
+  font-weight: 500;
+}
+
+/* 响应式：手机端竖排 */
+@media (max-width: 520px) {
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-card .avatar {
+    width: 100px;
+    height: 100px;
+  }
+  .about-card .about-info {
+    text-align: center;
+  }
+}
+
+/* 学习记录 */
+.sub-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #10b981;
+  margin: 20px 0 12px;
+}
+
+.sub-title:first-of-type {
+  margin-top: 12px;
+}
+
+/* 时间线 */
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 2px solid #d1fae5;
+  padding-left: 18px;
+}
+
+.timeline li {
+  position: relative;
+  padding: 8px 0 8px 4px;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #10b981;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 2px #10b981;
+}
+
+.tl-date {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #047857;
+}
+
+.tl-text {
+  font-size: 14px;
+  color: #2b2f36;
+}
+
+/* 技能标签 */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 13px;
+  color: #047857;
+  background-color: #d1fae5;
+  padding: 5px 14px;
+  border-radius: 16px;
+  font-weight: 500;
+}
+
+/* 项目卡片 */
+.project-card {
+  background-color: #ffffff;
+  padding: 32px;
+}
+
+.project-item {
+  text-align: left;
+  margin-top: 8px;
+}
+
+.project-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1f27;
+  margin-bottom: 6px;
+}
+
+.project-desc {
+  font-size: 15px;
+  color: #5a6270;
+}
+
+/* 页脚 */
+.footer {
+  text-align: center;
+  padding: 24px;
+  color: #9aa1ad;
+  font-size: 13px;
+  border-top: 1px solid #eef0f3;
+}
