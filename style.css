@@ -227,6 +227,123 @@ body {
   color: #5a6270;
 }
 
+/* AI 学习记录 · 赛博风 */
+.ai-log-card {
+  background-color: #0a0a0a;
+  border: 1px solid #00f0ff;
+  border-left: 4px solid #00f0ff;
+  font-family: "Consolas", "Courier New", monospace;
+  color: #e0f7ff;
+  padding: 32px;
+}
+
+.ai-log-card h2 {
+  color: #00f0ff;
+  font-size: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.ai-log-card h2::before {
+  content: "> ";
+  color: #00f0ff;
+}
+
+.cyber-sub {
+  color: #00f0ff;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 20px 0 14px;
+  opacity: 0.85;
+}
+
+.cyber-sub:first-of-type {
+  margin-top: 0;
+}
+
+/* 赛博时间线 */
+.cyber-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 1px solid #00f0ff;
+  padding-left: 20px;
+}
+
+.cyber-timeline li {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  padding: 10px 0;
+  gap: 16px;
+}
+
+.cyber-timeline li::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 18px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0a0a0a;
+  border: 2px solid #00f0ff;
+  box-shadow: 0 0 6px #00f0ff;
+}
+
+.cyber-timeline .c-date {
+  flex-shrink: 0;
+  width: 110px;
+  font-size: 13px;
+  color: #00f0ff;
+  font-weight: 600;
+}
+
+.cyber-timeline .c-text {
+  font-size: 14px;
+  color: #c5e8f0;
+}
+
+/* 赛博知识点卡片 */
+.cyber-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.cyber-card {
+  background-color: #0d1117;
+  border: 1px solid #00f0ff;
+  border-radius: 4px;
+  padding: 16px 18px;
+  box-shadow: inset 0 0 12px rgba(0, 240, 255, 0.08);
+}
+
+.cyber-card .cyber-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #00f0ff;
+  margin-bottom: 6px;
+}
+
+.cyber-card .cyber-title::before {
+  content: "$ ";
+  color: #00f0ff;
+}
+
+.cyber-card .cyber-desc {
+  font-size: 13px;
+  color: #9ad4e0;
+  line-height: 1.6;
+}
+
+@media (min-width: 640px) {
+  .cyber-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /* 页脚 */
 .footer {
   text-align: center;
